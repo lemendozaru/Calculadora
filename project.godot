@@ -14,6 +14,11 @@ config/name="Calculadora"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[display]
+
+window/size/viewport_width=720
+window/size/viewport_height=1280
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
