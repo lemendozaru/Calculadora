@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://cuunk78ckg2vo"]
 
+[ext_resource type="Script" uid="uid://dhr5ktcv4k4nj" path="res://programas/calculadora.gd" id="1_7b6ru"]
+
 [node name="Calculadora" type="Control" unique_id=1132286130]
 layout_mode = 3
 anchors_preset = 15
@@ -7,6 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_7b6ru")
 
 [node name="Fondo" type="Panel" parent="." unique_id=2126887975]
 layout_mode = 1
@@ -16,7 +19,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=46497273]
+[node name="VBox" type="VBoxContainer" parent="." unique_id=46497273]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -24,131 +27,131 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer" unique_id=1721270122]
+[node name="Margen" type="MarginContainer" parent="VBox" unique_id=1721270122]
 layout_mode = 2
 size_flags_vertical = 10
 
-[node name="Label" type="Label" parent="VBoxContainer/MarginContainer" unique_id=1755645422]
+[node name="Label" type="Label" parent="VBox/Margen" unique_id=1755645422]
 layout_mode = 2
 text = "1234567890"
 horizontal_alignment = 2
 
-[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer" unique_id=1629142324]
+[node name="Panel" type="PanelContainer" parent="VBox" unique_id=1629142324]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 2.0
 
-[node name="GridContainer" type="GridContainer" parent="VBoxContainer/PanelContainer" unique_id=1343619075]
+[node name="Rejilla" type="GridContainer" parent="VBox/Panel" unique_id=1343619075]
 layout_mode = 2
 columns = 4
 
-[node name="BotonC" type="Button" parent="VBoxContainer/PanelContainer/GridContainer" unique_id=1610022013]
+[node name="BotonC" type="Button" parent="VBox/Panel/Rejilla" unique_id=1610022013]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "C"
 
-[node name="BotonMasMenos" type="Button" parent="VBoxContainer/PanelContainer/GridContainer" unique_id=474601648]
+[node name="BotonMasMenos" type="Button" parent="VBox/Panel/Rejilla" unique_id=474601648]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "+/-"
 
-[node name="BotonPorcentaje" type="Button" parent="VBoxContainer/PanelContainer/GridContainer" unique_id=397026135]
+[node name="BotonPorcentaje" type="Button" parent="VBox/Panel/Rejilla" unique_id=397026135]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "%"
 
-[node name="BotonDivision" type="Button" parent="VBoxContainer/PanelContainer/GridContainer" unique_id=1574014363]
+[node name="BotonDivision" type="Button" parent="VBox/Panel/Rejilla" unique_id=1574014363]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "/"
 
-[node name="Boton7" type="Button" parent="VBoxContainer/PanelContainer/GridContainer" unique_id=243676093]
+[node name="Boton7" type="Button" parent="VBox/Panel/Rejilla" unique_id=243676093]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "7"
 
-[node name="Boton8" type="Button" parent="VBoxContainer/PanelContainer/GridContainer" unique_id=781131139]
+[node name="Boton8" type="Button" parent="VBox/Panel/Rejilla" unique_id=781131139]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "8"
 
-[node name="Boton9" type="Button" parent="VBoxContainer/PanelContainer/GridContainer" unique_id=749246993]
+[node name="Boton9" type="Button" parent="VBox/Panel/Rejilla" unique_id=749246993]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "9"
 
-[node name="BotonX" type="Button" parent="VBoxContainer/PanelContainer/GridContainer" unique_id=979542762]
+[node name="BotonX" type="Button" parent="VBox/Panel/Rejilla" unique_id=979542762]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "X"
 
-[node name="Boton4" type="Button" parent="VBoxContainer/PanelContainer/GridContainer" unique_id=1482047467]
+[node name="Boton4" type="Button" parent="VBox/Panel/Rejilla" unique_id=1482047467]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "4"
 
-[node name="Boton5" type="Button" parent="VBoxContainer/PanelContainer/GridContainer" unique_id=1127659505]
+[node name="Boton5" type="Button" parent="VBox/Panel/Rejilla" unique_id=1127659505]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "5"
 
-[node name="Boton6" type="Button" parent="VBoxContainer/PanelContainer/GridContainer" unique_id=1877767014]
+[node name="Boton6" type="Button" parent="VBox/Panel/Rejilla" unique_id=1877767014]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "6"
 
-[node name="Boton-" type="Button" parent="VBoxContainer/PanelContainer/GridContainer" unique_id=735494728]
+[node name="Boton-" type="Button" parent="VBox/Panel/Rejilla" unique_id=735494728]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "-"
 
-[node name="Boton1" type="Button" parent="VBoxContainer/PanelContainer/GridContainer" unique_id=454138042]
+[node name="Boton1" type="Button" parent="VBox/Panel/Rejilla" unique_id=454138042]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "1"
 
-[node name="Boton2" type="Button" parent="VBoxContainer/PanelContainer/GridContainer" unique_id=667994176]
+[node name="Boton2" type="Button" parent="VBox/Panel/Rejilla" unique_id=667994176]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "2"
 
-[node name="Boton3" type="Button" parent="VBoxContainer/PanelContainer/GridContainer" unique_id=699840329]
+[node name="Boton3" type="Button" parent="VBox/Panel/Rejilla" unique_id=699840329]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "3"
 
-[node name="BotonMas" type="Button" parent="VBoxContainer/PanelContainer/GridContainer" unique_id=530011573]
+[node name="BotonMas" type="Button" parent="VBox/Panel/Rejilla" unique_id=530011573]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "+"
 
-[node name="Espaciador" type="Control" parent="VBoxContainer/PanelContainer/GridContainer" unique_id=274974616]
+[node name="Espaciador" type="Control" parent="VBox/Panel/Rejilla" unique_id=274974616]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="ContenedorCero" type="Control" parent="VBoxContainer/PanelContainer/GridContainer" unique_id=1422184224]
+[node name="Contenedor0" type="Control" parent="VBox/Panel/Rejilla" unique_id=1422184224]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Button0" type="Button" parent="VBoxContainer/PanelContainer/GridContainer/ContenedorCero" unique_id=939060420]
+[node name="Boton0" type="Button" parent="VBox/Panel/Rejilla/Contenedor0" unique_id=939060420]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -158,14 +161,16 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "0"
 
-[node name="BotonPunto" type="Button" parent="VBoxContainer/PanelContainer/GridContainer" unique_id=1766894894]
+[node name="BotonPunto" type="Button" parent="VBox/Panel/Rejilla" unique_id=1766894894]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "."
 
-[node name="BotonIgual" type="Button" parent="VBoxContainer/PanelContainer/GridContainer" unique_id=787096684]
+[node name="BotonIgual" type="Button" parent="VBox/Panel/Rejilla" unique_id=787096684]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "="
+
+[connection signal="resized" from="VBox/Panel/Rejilla/Contenedor0/Boton0" to="." method="_on_boton_0_resized"]
